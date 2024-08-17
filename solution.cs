@@ -1,10 +1,7 @@
-using System;
-using System.Linq;
-
-class Program
-{
-    static void Main(string[] args)
+static int MaxSubarrayProduct(int[] arr)
     {
-        int[] arr = { 1, -2, -3, 0, 7, -8, -2 };
-        Console.WriteLine("Maximum Sub array product is " + MaxSubarrayProduct(arr));
-    }
+        int n = arr.Length;
+        int maxEndingHere = 1;
+        int minEndingHere = 1;
+        int maxSoFar = 0;
+        int flag = 0;
