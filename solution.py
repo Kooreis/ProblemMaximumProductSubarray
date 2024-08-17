@@ -1,5 +1,5 @@
-def max_product_subarray(arr):
-    max_ending_here = 1
-    min_ending_here = 1
-    max_so_far = 0
-    flag = 0
+for i in range(0, len(arr)):
+        if arr[i] > 0:
+            max_ending_here = max_ending_here * arr[i]
+            min_ending_here = min(min_ending_here * arr[i], 1)
+            flag = 1
